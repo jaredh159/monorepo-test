@@ -6,7 +6,11 @@
   "repository": "git@github.com:jaredh159/monorepo-test.git",
   "author": "Jared Henderson <jared@netrivet.com>",
   "license": "MIT",
+  "scripts": {
+    "preinstall": "echo PREINSTALL >> ./packages/hello/build/index.html"
+  },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {}
 }
